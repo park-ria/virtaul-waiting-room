@@ -6,8 +6,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="kr">
+      <body>
+        <main className="min-h-screen px-5 md:px-10 bg-white overflow-x-hidden">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
