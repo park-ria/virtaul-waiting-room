@@ -3,7 +3,7 @@ import { Header } from "./Header";
 
 export default function HeaderPage() {
   return (
-    <div className="w-full h-[2000px]">
+    <div className="w-full h-20">
       <Header />
     </div>
   );

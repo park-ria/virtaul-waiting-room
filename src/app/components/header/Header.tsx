@@ -58,8 +58,8 @@ const menuList = [
 
 export const Header = () => {
   return (
-    <div>
-      <ul>
+    <div className="w-full h-20 bg-white">
+      <ul className="flex">
         {menuList.map((menu) => (
           <li>
             <Link href={`/${menu.href}`}>{menu.name}</Link>

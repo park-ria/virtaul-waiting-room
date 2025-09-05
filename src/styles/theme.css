@@ -1,0 +1,31 @@
+@theme {
+  /* Colors */
+  --color-background: #f3f6fc;
+  --color-font: #171717;
+  --color-subfont: #7e7e7e;
+  --color-main: #4d6bfb;
+  --color-sidebar-bg: #ffffff;
+  --color-sidebar-sub: #f8f8f8;
+  --color-sub: #3ab9a8;
+  --color-warning: #ff6456;
+  --color-accent: #3fdfff;
+  --color-lightgray: #eeeeee;
+  --color-gray: #bfbfbf;
+  --color-darkgray: #7e7e7e;
+  --color-darkblue: #1330bb;
+  --color-chart1: #2b3af2;
+  --color-char2: #3885f2;
+  --color-char3: #3fdfff;
+  --color-char4: #1beac4;
+  --color-char5: #2cd2ce;
+}
+
+/* 다크 모드 */
+.dark {
+  --color-background: #1c1e2b;
+  --color-font: #ffffff;
+  --color-subfont: #eeeeee;
+  --color-main: #3887ff;
+  --color-sidebar-bg: #2c2d42;
+  --color-sidebar-sub: #353752;
+}

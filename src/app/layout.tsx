@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="kr">
       <body>
-        <main className="min-h-screen px-5 md:px-10 bg-white overflow-x-hidden">
+        <main className="min-h-screen px-7.5 bg-white overflow-x-hidden">
           {children}
         </main>
       </body>
