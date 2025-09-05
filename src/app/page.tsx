@@ -2,9 +2,9 @@ import { Header } from "./components/header";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
+    <div className="flex flex-col">
       <Header />
-      <h1 className="text-3xl font-bold text-blue-500">Hello Tailwind!</h1>
+      <h1 className="text-3xl font-bold text-blue-500">Hello</h1>
     </div>
   );
 }

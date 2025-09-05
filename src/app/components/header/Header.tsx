@@ -60,8 +60,8 @@ export const Header = () => {
   return (
     <div className="w-full h-20 bg-white">
       <ul className="flex">
-        {menuList.map((menu) => (
-          <li>
+        {menuList.map((menu, idx) => (
+          <li key={idx}>
             <Link href={`/${menu.href}`}>{menu.name}</Link>
           </li>
         ))}

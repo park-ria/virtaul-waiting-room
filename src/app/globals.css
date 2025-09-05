@@ -1,8 +1,11 @@
+/* 외부 import (폰트, 커스텀 테마) */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import "../styles/theme.css";
+
+/* Tailwind 지시문 */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "../styles/theme.css";
 
 /* 사용자 커스텀 CSS */
 html,

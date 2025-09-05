@@ -2,7 +2,7 @@
   /* Colors */
   --color-background: #f3f6fc;
   --color-font: #171717;
-  --color-subfont: #7e7e7e;
+  --color-sub-font: #7e7e7e;
   --color-main: #4d6bfb;
   --color-sidebar-bg: #ffffff;
   --color-sidebar-sub: #f8f8f8;
@@ -24,7 +24,7 @@
 .dark {
   --color-background: #1c1e2b;
   --color-font: #ffffff;
-  --color-subfont: #eeeeee;
+  --color-sub-font: #eeeeee;
   --color-main: #3887ff;
   --color-sidebar-bg: #2c2d42;
   --color-sidebar-sub: #353752;
