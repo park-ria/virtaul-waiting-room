@@ -1,0 +1,8 @@
+"use client";
+
+import { atom } from "recoil";
+
+export const darkState = atom({
+  key: "darkState",
+  default: false,
+});
