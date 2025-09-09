@@ -1,4 +1,11 @@
 import "./globals.css";
+import dynamic from "next/dynamic";
+
+// 클라이언트에서만 렌더
+const Providers = dynamic(
+  () => import("./components/theme/Providers").then((m) => m.Providers),
+  { ssr: false }
+);
 
 export default function RootLayout({
   children,
@@ -8,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="kr">
       <body>
-        <main className="min-h-screen px-7.5 bg-background overflow-x-hidden">
-          {children}
-        </main>
+        <Providers>
+          <main className="min-h-screen px-7.5 bg-background overflow-x-hidden">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   );

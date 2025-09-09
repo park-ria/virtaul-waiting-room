@@ -1,8 +1,8 @@
 "use client";
 
-import { darkState } from "@/recoil/themeAtom";
 import { useEffect } from "react";
 import { useRecoilValue } from "recoil";
+import { darkState } from "@/recoil/themeAtom";
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const isDark = useRecoilValue(darkState);
