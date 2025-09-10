@@ -1,11 +1,5 @@
 import "./globals.css";
-import dynamic from "next/dynamic";
-
-// 클라이언트에서만 렌더
-const Providers = dynamic(
-  () => import("./components/theme/Providers").then((m) => m.Providers),
-  { ssr: false }
-);
+import Providers from "./components/theme/Providers";
 
 export default function RootLayout({
   children,
