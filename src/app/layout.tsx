@@ -1,5 +1,5 @@
 import "./globals.css";
-import Providers from "./components/theme/Providers";
+import ThemeProviders from "./components/theme/ThemeProviders";
 
 export default function RootLayout({
   children,
@@ -9,11 +9,11 @@ export default function RootLayout({
   return (
     <html lang="kr">
       <body>
-        <Providers>
+        <ThemeProviders>
           <main className="min-h-screen px-7.5 bg-background overflow-x-hidden">
             {children}
           </main>
-        </Providers>
+        </ThemeProviders>
       </body>
     </html>
   );

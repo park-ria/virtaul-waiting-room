@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 
-export const darkState = atom({
-  key: "darkState",
-  default: false,
+export const themeState = atom<"light" | "dark">({
+  key: "themeState",
+  default: "light",
 });
