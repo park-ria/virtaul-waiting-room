@@ -1,15 +1,19 @@
-import Link from "next/link";
+"use client";
+
 import React from "react";
+import Link from "next/link";
+import { useRecoilValue } from "recoil";
+import { darkState } from "@/recoil/themeAtom";
 
 const menuList = [
   {
     name: "프로젝트",
     href: "project",
-    subMenu: [
+    submenu: [
       {
         name: "세그먼트",
         href: "segment",
-        subMenu: [
+        submenu: [
           { name: "모니터링", href: "monitoring" },
           { name: "스케줄러", href: "scheduler" },
           { name: "고급 설정", href: "advanced-settings" },
@@ -23,7 +27,7 @@ const menuList = [
   {
     name: "대기실",
     href: "waitingroom",
-    subMenu: [
+    submenu: [
       { name: "리스트", href: "list" },
       { name: "모니터링", href: "monitoring" },
     ],
@@ -31,7 +35,7 @@ const menuList = [
   {
     name: "트리거룰",
     href: "trigger",
-    subMenu: [
+    submenu: [
       { name: "리스트", href: "list" },
       { name: "모니터링", href: "monitoring" },
     ],
@@ -39,7 +43,7 @@ const menuList = [
   {
     name: "사용자제한",
     href: "limits",
-    subMenu: [
+    submenu: [
       { name: "설정", href: "settings" },
       {
         name: "접속자관리",
@@ -57,8 +61,10 @@ const menuList = [
 ];
 
 export const Header = () => {
+  const isDark = useRecoilValue(darkState);
   return (
-    <div className="w-full h-20 bg-white">
+    <div>
+      <img src={`images/${isDark ? "dark" : "light"}logo.png`} />
       <ul className="flex">
         {menuList.map((menu, idx) => (
           <li key={idx}>
