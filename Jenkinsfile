@@ -7,7 +7,7 @@ pipeline {
                 git(
                     url: 'https://github.com/park-ria/virtaul-waiting-room.git',
                     branch: 'main',
-                    credentialsId: 'github'
+                    credentialsId: 'github-token'
                 )
             }
         }
