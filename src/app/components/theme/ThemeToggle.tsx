@@ -18,7 +18,7 @@ export const ThemeToggle = () => {
 
   return (
     <button onClick={() => setIsDark((prev) => !prev)}>
-      {isDark ? "Light" : "Dark"}
+      {isDark ? "Light" : "Dark"} Mode
     </button>
   );
 };
